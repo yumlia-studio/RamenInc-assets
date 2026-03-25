@@ -1,0 +1,44 @@
+[
+  {
+    "id": "s1_white_cream",
+    "name": "白クリーム",
+    "covers": ["tori_paitan+shio", "tori_paitan+tonkotsu_tare", "tonkotsu+shio", "tonkotsu+tonkotsu_tare"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains thick creamy white broth — opaque milky white with a slight ivory tint. No toppings, no noodles visible — just the smooth creamy soup surface filling the bowl. The broth has a rich, velvety appearance with subtle surface texture. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s2_cream_brown",
+    "name": "クリーム茶",
+    "covers": ["tori_paitan+shoyu", "tonkotsu+shoyu"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains creamy brown soy sauce broth — opaque warm caramel brown, like a blend of cream and soy sauce. No toppings, no noodles visible — just the smooth creamy brown soup surface filling the bowl. Rich and warm appearance. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s3_clear_dark_amber",
+    "name": "澄んだ濃い琥珀",
+    "covers": ["gyokai+shoyu"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains clear dark amber fish broth — transparent dark amber like strong tea, with a deep rich color. No toppings, no noodles visible — just the clear dark soup filling the bowl. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s4_golden_brown",
+    "name": "金茶",
+    "covers": ["tori_gyokai+shoyu", "yasai+shoyu", "tori_gyokai+miso"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains golden-brown broth — a warm rich golden brown, slightly translucent. No toppings, no noodles visible — just the golden brown soup surface filling the bowl. Inviting and appetizing color. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s5_miso_amber",
+    "name": "濃い琥珀（味噌）",
+    "covers": ["tori_paitan+miso", "tonkotsu+miso", "gyokai+miso", "yasai+miso"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains thick miso broth — opaque warm amber-orange, rich and hearty looking. No toppings, no noodles visible — just the thick miso soup surface filling the bowl. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s6_clear_light_gold",
+    "name": "澄んだ薄金",
+    "covers": ["gyokai+shio", "tori_gyokai+shio"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains clear light golden broth — transparent pale gold like white wine, delicate and elegant. No toppings, no noodles visible — just the clear light golden soup filling the bowl. Pure white background. Bowl fills 75% of frame."
+  },
+  {
+    "id": "s7_almost_clear",
+    "name": "ほぼ透明（薄黄緑）",
+    "covers": ["yasai+shio", "gyokai+tonkotsu_tare", "yasai+tonkotsu_tare", "tori_gyokai+tonkotsu_tare"],
+    "prompt": "A ramen bowl seen from top-down 3/4 isometric at 45 degrees. White ceramic bowl with a thin red line around the rim, smooth rounded form. The bowl contains very light clear vegetable broth — almost transparent with a very faint yellow-green tint. No toppings, no noodles visible — just the nearly clear light soup filling the bowl. Pure white background (#FFFFFF). Bowl fills 75% of frame."
+  }
+]

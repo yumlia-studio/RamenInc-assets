@@ -1,0 +1,57 @@
+[
+  {
+    "id": "chashu",
+    "name": "チャーシュー",
+    "prompt": "A single round slice of Japanese chashu pork for ramen topping, viewed from above at 45 degrees. Tender braised pork with a caramelized soy-glazed surface, showing marbled fat and lean meat layers. Round slice about 8cm diameter. White background, isolated single item."
+  },
+  {
+    "id": "ajitama",
+    "name": "味玉",
+    "prompt": "A soft-boiled ramen egg ajitama cut in half. The white is light brown from soy marinade, the yolk is jammy and deep orange, slightly flowing. Two halves side by side showing the beautiful cross-section. White background, isolated single item."
+  },
+  {
+    "id": "nori",
+    "name": "海苔",
+    "prompt": "A single sheet of dried nori seaweed for ramen. Dark green-black rectangular sheet, slightly textured surface with subtle sheen. Standing slightly upright. No bowl, no dish, no plate. Just the nori floating on a pure white background. Isolated single item."
+  },
+  {
+    "id": "menma",
+    "name": "メンマ",
+    "prompt": "A small pile of 3-4 menma seasoned bamboo shoots. Pale yellow-brown strips, slightly glossy from seasoning. Soft and tender looking. White background, isolated single item."
+  },
+  {
+    "id": "negi",
+    "name": "ネギ",
+    "prompt": "A small pile of sliced green onion negi rings, about 8-10 thin round slices. Bright green outer ring with white center, freshly cut appearance. White background, isolated single item."
+  },
+  {
+    "id": "shiraga_negi",
+    "name": "白髪ねぎ",
+    "prompt": "A small fluffy mound of shredded white leek shiraga negi. Very thin hair-like white strips, light and airy pile. Delicate and elegant garnish. No bowl, no dish, no plate. Just the food on a pure white background. Isolated single item."
+  },
+  {
+    "id": "moyashi",
+    "name": "もやし",
+    "prompt": "A small handful of bean sprouts moyashi. White thin sprouts with small yellow bean heads, fresh and crisp looking. About 15-20 sprouts in a small pile. White background, isolated single item."
+  },
+  {
+    "id": "butter",
+    "name": "バター",
+    "prompt": "A single small rectangular pat of butter. Bright yellow with a gentle shine, edges slightly softened as if starting to melt. Classic butter pat shape. White background, isolated single item."
+  },
+  {
+    "id": "corn",
+    "name": "コーン",
+    "prompt": "A small scattering of about 15 sweet corn kernels. Bright yellow, plump and shiny. Loosely scattered in a small cluster. No bowl, no dish, no plate. Just the corn kernels on a pure white background. Isolated single item."
+  },
+  {
+    "id": "yuzu",
+    "name": "柚子皮",
+    "prompt": "Two or three thin strips of yuzu citrus peel. Bright yellow-green, small and delicate. Aromatic garnish with slight curl. No bowl, no dish, no plate. Just the yuzu peel on a pure white background. Isolated single item."
+  },
+  {
+    "id": "kikurage",
+    "name": "きくらげ",
+    "prompt": "Two or three pieces of wood ear mushroom kikurage. Dark brown, thin, wavy-edged, slightly translucent. Sliced into strips, soft and bouncy texture. No bowl, no dish, no plate. Just the mushroom pieces on a pure white background. Isolated single item."
+  }
+]

@@ -1,0 +1,10 @@
+Style: modern vector illustration. NO black outlines — shapes are defined
+by color differences and soft gradients only. Smooth clean shapes like
+Adobe Illustrator artwork. Soft inner shadows and highlights give gentle
+3D form. Think: premium app icon quality, Figma/Sketch design asset.
+NOT anime. NOT cartoon. NOT hand-drawn. NOT cel-shaded. Color fills with
+subtle gradients, no flat solid colors. Muted warm palette. Slightly
+desaturated, sophisticated. Lighting: soft diffused, no harsh shadows.
+Outline strokes should be very thin hairline weight using muted warm brown
+color, not black or dark brown. No chopsticks. No steam.
+Pure white background (#FFFFFF). Image: square, centered.
