@@ -28,27 +28,41 @@ const SOUP_MAP: Record<string, string> = {
 };
 
 // トッピング配置座標（丼幅に対する比率）
+// リアルなラーメンの盛り付けを参考:
+//   丼のスープ面は約 x:0.15~0.85, y:0.20~0.55 の楕円エリア
+//   奥(y小)→手前(y大)、左(x小)→右(x大)
 // 海苔は3枚重ねで配置するため、配列で定義
 type ToppingPlacement = {
   x: number; y: number; w: number; h: number;
   rotate?: number; layer?: "back" | "front";
 };
 const TOPPING_LAYOUT: Record<string, ToppingPlacement[]> = {
-  chashu:       [{ x: 0.10, y: 0.28, w: 0.40, h: 0.30 }],
-  ajitama:      [{ x: 0.40, y: 0.30, w: 0.38, h: 0.30 }],
+  // チャーシュー: 左寄り中央、存在感のあるメインの具
+  chashu:       [{ x: 0.14, y: 0.26, w: 0.34, h: 0.26 }],
+  // 味玉: チャーシューの右隣、卵2つでしっかり見える
+  ajitama:      [{ x: 0.42, y: 0.28, w: 0.30, h: 0.24 }],
+  // 海苔: 奥の右側に3枚立てかけ、リムに沿って存在感
   nori:         [
-    { x: 0.52, y: 0.10, w: 0.32, h: 0.30, rotate: 8, layer: "back" },
-    { x: 0.56, y: 0.12, w: 0.30, h: 0.28, rotate: -5, layer: "back" },
-    { x: 0.48, y: 0.14, w: 0.31, h: 0.29, rotate: 12, layer: "back" },
+    { x: 0.52, y: 0.06, w: 0.22, h: 0.34, rotate: 5, layer: "back" },
+    { x: 0.58, y: 0.08, w: 0.20, h: 0.32, rotate: -4, layer: "back" },
+    { x: 0.48, y: 0.10, w: 0.21, h: 0.33, rotate: 10, layer: "back" },
   ],
-  menma:        [{ x: 0.32, y: 0.24, w: 0.28, h: 0.28 }],
-  negi:         [{ x: 0.28, y: 0.40, w: 0.26, h: 0.14 }],
-  shiraga_negi: [{ x: 0.26, y: 0.34, w: 0.30, h: 0.20 }],
-  moyashi:      [{ x: 0.16, y: 0.30, w: 0.32, h: 0.22 }],
-  butter:       [{ x: 0.40, y: 0.36, w: 0.20, h: 0.14 }],
-  corn:         [{ x: 0.34, y: 0.40, w: 0.22, h: 0.14 }],
-  yuzu:         [{ x: 0.42, y: 0.38, w: 0.16, h: 0.12 }],
-  kikurage:     [{ x: 0.44, y: 0.30, w: 0.26, h: 0.20 }],
+  // メンマ: チャーシューの奥に添える
+  menma:        [{ x: 0.18, y: 0.20, w: 0.20, h: 0.18 }],
+  // ネギ: 中央手前に散らす、実際のラーメンではパラパラだが見えるサイズに
+  negi:         [{ x: 0.28, y: 0.38, w: 0.20, h: 0.12 }],
+  // 白髪ネギ: 中央にふわっと山盛り、トッピングの上に載る感じ
+  shiraga_negi: [{ x: 0.24, y: 0.26, w: 0.32, h: 0.24 }],
+  // もやし: 右寄り中央にどっさり、味噌ラーメンの主役級
+  moyashi:      [{ x: 0.32, y: 0.20, w: 0.42, h: 0.30 }],
+  // バター: もやしの上にドンと載る、溶けかけで存在感
+  butter:       [{ x: 0.44, y: 0.30, w: 0.18, h: 0.14 }],
+  // コーン: もやしの手前に小山で盛る、黄色で目を引く
+  corn:         [{ x: 0.30, y: 0.36, w: 0.24, h: 0.16 }],
+  // 柚子皮: 小さなアクセント、スープの色とコントラスト出る位置
+  yuzu:         [{ x: 0.40, y: 0.36, w: 0.12, h: 0.10 }],
+  // きくらげ: チャーシュー右上あたり、中程度
+  kikurage:     [{ x: 0.42, y: 0.24, w: 0.22, h: 0.18 }],
 };
 
 interface CompositeRequest {
@@ -133,10 +147,10 @@ function composePresets() {
     { broth: "tori_paitan", tare: "shio", toppings: ["nori", "chashu", "ajitama", "negi", "yuzu"], outputName: "bowl_tori_paitan_shio" },
     { broth: "tonkotsu", tare: "tonkotsu_tare", toppings: ["chashu", "negi", "nori"], outputName: "bowl_tonkotsu_classic" },
     { broth: "gyokai", tare: "shoyu", toppings: ["nori", "chashu", "ajitama", "menma", "negi"], outputName: "bowl_gyokai_shoyu" },
-    { broth: "yasai", tare: "miso", toppings: ["chashu", "corn", "butter", "moyashi", "negi"], outputName: "bowl_yasai_miso" },
+    { broth: "yasai", tare: "miso", toppings: ["moyashi", "chashu", "corn", "butter", "negi"], outputName: "bowl_yasai_miso" },
     { broth: "tori_gyokai", tare: "shoyu", toppings: ["chashu", "ajitama", "nori", "menma", "negi"], outputName: "bowl_tori_gyokai_shoyu" },
     { broth: "gyokai", tare: "shio", toppings: ["chashu", "yuzu", "shiraga_negi"], outputName: "bowl_gyokai_shio" },
-    { broth: "tonkotsu", tare: "miso", toppings: ["chashu", "corn", "butter", "negi", "kikurage"], outputName: "bowl_tonkotsu_miso" },
+    { broth: "tonkotsu", tare: "miso", toppings: ["chashu", "kikurage", "corn", "butter", "negi"], outputName: "bowl_tonkotsu_miso" },
   ];
 
   for (const preset of presets) {
