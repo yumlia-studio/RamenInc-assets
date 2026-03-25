@@ -1,0 +1,20 @@
+{
+  "name": "ramen-inc-asset-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "ts-node generate-bowl-assets/generate-images.ts",
+    "remove-bg": "ts-node generate-bowl-assets/remove-background.ts",
+    "composite": "ts-node generate-bowl-assets/composite.ts",
+    "all": "ts-node generate-bowl-assets/run-all.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
