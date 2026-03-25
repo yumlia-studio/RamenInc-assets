@@ -38,3 +38,15 @@
 | 柚子皮 | きくらげ |
 |---|---|
 | ![](asset_tools/assets/bowl/thumbnails/topping_yuzu.png) | ![](asset_tools/assets/bowl/thumbnails/topping_kikurage.png) |
+
+---
+
+## 合成結果
+
+| 鶏白湯×塩 | 豚骨クラシック | 魚介×醤油 |
+|---|---|---|
+| ![](asset_tools/assets/bowl/thumbnails/bowl_tori_paitan_shio.png) | ![](asset_tools/assets/bowl/thumbnails/bowl_tonkotsu_classic.png) | ![](asset_tools/assets/bowl/thumbnails/bowl_gyokai_shoyu.png) |
+
+| 野菜×味噌 | 鶏魚介×醤油 | 魚介×塩 | 豚骨×味噌 |
+|---|---|---|---|
+| ![](asset_tools/assets/bowl/thumbnails/bowl_yasai_miso.png) | ![](asset_tools/assets/bowl/thumbnails/bowl_tori_gyokai_shoyu.png) | ![](asset_tools/assets/bowl/thumbnails/bowl_gyokai_shio.png) | ![](asset_tools/assets/bowl/thumbnails/bowl_tonkotsu_miso.png) |
